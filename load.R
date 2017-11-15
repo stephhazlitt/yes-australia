@@ -12,5 +12,13 @@ participation <- "participation.xls"
 response_data <- curl_download(url_responses, destfile = "tmp/responses.xls")
 participation_data <- curl_download(url_participation, destfile = "tmp/participation.xls")
 
-state.responses <- read_xls(data, range = "Table 1!A5:P16")
-div.responses <- read_xls(data, range = "Table 2!A5:P183")
+state.responses <- read_xls(response_data, range = "Table 1!A5:P16")
+div.responses <- read_xls(response_data, range = "Table 2!A5:P183")
+
+state.part <- read_xls(participation_data, range = "Table 1!A6:S41")
+state.part.males <- read_xls(participation_data, range = "Table 2!A6:S41")
+state.part.females <- read_xls(participation_data, range = "Table 3!A6:S41")
+
+save(state.responses, div.responses, state.part.females,
+     state.part, state.part.males,
+     file = "tmp/raw_data.RData")
