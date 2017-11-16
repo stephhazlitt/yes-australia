@@ -17,17 +17,17 @@ participation_data <- curl_download(url_participation, destfile = "tmp/participa
 
 ## Import selections of the Excel sheets
 state.responses.raw <- read_xls(response_data, range = "Table 1!A8:P16",
-                            col_names = c("state", "clear-yes-count", "clear-yes-percent",
-                                          "clear-no-count", "clear-no-percent", "clear-total-count", "clear-total-percent",
-                                          "blank", "clear-response-count", "clear-response-percent", "not-clear-response-count",
-                                          "not-clear-response-percent", "no-response-count", "no-response-percent",
-                                          "total-pop", "tot-pop-percent"))
+                            col_names = c("state", "clear_yes_count", "clear_yes_percent",
+                                          "clear_no_count", "clear_no_percent", "clear_total_count", "clear_total_percent",
+                                          "blank", "clear_response_count", "clear_response_percent", "not_clear_response_count",
+                                          "not_clear_response_percent", "no_response_count", "no_response_percent",
+                                          "total_pop", "tot_pop_percent"))
 div.responses.raw <- read_xls(response_data, range = "Table 2!A8:P183",
-                          col_names = c("div", "clear-yes-count", "clear-yes-percent",
-                                        "clear-no-count", "clear-no-percent", "clear-total-count", "clear-total-percent",
-                                        "blank", "clear-response-count", "clear-response-percent", "not-clear-response-count",
-                                        "not-clear-response-percent", "no-response-count", "no-response-percent",
-                                        "total-pop", "tot-pop-percent"))
+                          col_names = c("div", "clear_yes_count", "clear_yes_percent",
+                                        "clear_no_count", "clear_no_percent", "clear_total_count", "clear_total_percent",
+                                        "blank", "clear_response_count", "clear_response_percent", "not_clear_response_count",
+                                        "not_clear_response_percent", "no_response_count", "no_response_percent",
+                                        "total_pop", "tot_pop_percent"))
 
 state.part.raw <- read_xls(participation_data, range = "Table 1!A6:S41")
 state.part.males.raw <- read_xls(participation_data, range = "Table 2!A6:S41")
