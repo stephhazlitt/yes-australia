@@ -3,7 +3,7 @@
 library(dplyr) # data munging
 
 ## Load raw data if not already in local repository
-if (!exists("state.responses")) load("tmp/raw_data.RData")
+if (!exists("state.responses.raw")) load("tmp/raw_data.RData")
 
 ## state responses
 state.responses <- state.responses.raw %>% 
@@ -16,3 +16,6 @@ div.responses <- div.responses.raw %>%
   filter(!is.na(div) & div != "Australia") %>%
   filter(!grepl(" Divisions$", div))
   
+## Save clean data in tmp folder
+save(state.responses, div.responses,
+     file = "tmp/clean_data.RData")
