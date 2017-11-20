@@ -11,7 +11,7 @@ library (knitr)
 
 opts_chunk$set(echo=FALSE, cache=TRUE, message=FALSE, warning=FALSE, 
                       error=FALSE)
-read_chunk("plots.R")
+read_chunk("03_plots.R")
 
 ```
 
@@ -28,14 +28,14 @@ I love seeing the chloropleth maps of Australia with the overall State results, 
 
 I find it hard to really see what is behind the State results without being about compare electorates visually all in the same space (e.g. in one plot or one one page). So I wondered if I could explore the data and create a small set of static data visualizations to explore the electorate results more closely, with a focus on being able to compare and contrast quickly. Sort of a data vizualization challenge to myself :)
 
-
 #### Plot 1: State Results
 ```{r states, fig.width = 7, fig.height = 4}
 ```
 
-
 #### Plot 2: Electorate Results
 ```{r divisions, fig.width = 9, fig.height = 6}
 ```
+
+#### Plot 4: TBD
 
 Data sourced from the [Australia Bureau of Statistics](https://marriagesurvey.abs.gov.au/results/downloads.html), released under the [CC BY 2.5 AU Licence](https://creativecommons.org/licenses/by/2.5/au/).
