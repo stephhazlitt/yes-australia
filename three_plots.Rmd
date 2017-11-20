@@ -26,7 +26,8 @@ There have been a lot of great, useful interactive data summaries and visualizat
 
 I love seeing the chloropleth maps of Australia with the overall State results, and I love sifting through results interactively electorate-by- electorate---a great presentation approach for users seeking information on a few key places. 
 
-I find it hard to really see what is behind the State results without being about compare electorates visually all in the same space (e.g. in one plot or one one page). So I wondered if I could explore the data and create a small set of static data visualizations to explore the electorate results more closely, with a focus on being able to compare and contrast quickly. Sort of a data vizualization challenge to myself :)
+However, I find it hard to really see what is behind the State results without being about compare electorates visually *all* in the same space---in one plot or one one page. So I set out to explore the data and create a small set of static data visualizations to explore the electorate results more closely, with a focus on being able to compare and contrast quickly. An old-school state data vizualization challenge to myself :)
+
 
 #### Plot 1: State Results
 ```{r states, fig.width = 7, fig.height = 4}
