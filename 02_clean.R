@@ -7,13 +7,12 @@ if (!exists("responses.raw")) load("tmp/raw_data.RData")
 
 
 ## responses
-responses.raw$div[responses.raw$div == "Total"] <- "Australia"
-
 responses <- responses.raw %>% 
   select(-blank) %>% 
   left_join(state.div) %>%
   filter(!is.na(div) & !is.na(clear_yes_count)) %>%
   filter(!grepl(" Divisions$", div)) %>% 
+  mutate(div = replace(div, div=="Total", "Australia")) %>% 
   mutate(state = replace(state, is.na(state), "Australia"))
 
 ## participation
