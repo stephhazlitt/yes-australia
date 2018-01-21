@@ -5,8 +5,8 @@ library(curl)
 library(readxl)
 library(readr)
 
-url_responses <- "https://marriagesurvey.abs.gov.au/results/files/australian_marriage_law_postal_survey_2017_-_response_final.xls"
-url_participation <- "https://marriagesurvey.abs.gov.au/results/files/australian_marriage_law_postal_survey_2017_-_participation_final.xls"
+url_responses <- "http://www.abs.gov.au/ausstats/abs@archive.nsf/log?openagent&australian_marriage_law_postal_survey_2017_-_response_final.xls&1800.0&Time%20Series%20Spreadsheet&916379DAEE6E960CCA2581F0001A08A9&0&2017&11.12.2017&Latest"
+url_participation <- "http://www.abs.gov.au/ausstats/abs@archive.nsf/log?openagent&australian_marriage_law_postal_survey_2017_-_participation_final.xls&1800.0&Time%20Series%20Spreadsheet&830FD42482B309D6CA2581F0001A085B&0&2017&11.12.2017&Latest"
 
 tmp <- dir.create("tmp", showWarnings = FALSE)
 
