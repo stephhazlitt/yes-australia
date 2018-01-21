@@ -8,9 +8,9 @@ There have been a lot of great, useful interactive data summaries and visualizat
 
 I love seeing the chloropleth maps of Australia with the overall results, and I love sifting through results interactively electorate-by-electorate—a great presentation approach for users seeking information on a few key places.
 
-However, I find it hard to really see or ask questions about patterns without being about to compare electorates visually *all* in the same space—in one plot or one one page. So I set out to explore the data and create a small set of static data visualizations to explore the electorate results more closely, with a focus on being able to compare and contrast quickly.
+However, I find it hard to really see or ask questions about patterns without being about to compare electorates visually *all* in the same space—in one plot or one one page. So I set out to explore the data and create a small set of static data visualizations to explore the state and electorate results more closely, with a focus on being able to compare and contrast quickly.
 
-A static data vizualization challenge to myself :)
+This is a static data vizualization challenge to myself, and an interesting data set to continue my learning and practice with the [tidyverse](https://www.tidyverse.org/) :)
 
 <br/>
 
@@ -26,7 +26,7 @@ A static data vizualization challenge to myself :)
 
 <br/>
 
-#### Plot 4: TBD
+#### Plot 4: This one is in progress, I am still cleaning the raw data....
 
 <br/>
 
