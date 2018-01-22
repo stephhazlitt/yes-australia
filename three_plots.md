@@ -28,7 +28,7 @@ This is a static data vizualization challenge to myself, and an interesting data
 
 #### Plot 4: This one is in progress....
 
-I am still cleaning the raw data 💻.
+I am still cleaning the raw data 👩‍💻.
 
 <br/>
 
